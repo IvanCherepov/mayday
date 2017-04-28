@@ -1,0 +1,177 @@
+
+mmands": [
+    {
+     "args": ["curl", "-LO", "https://storage.googleapis.com/kubernetes-release/release/v1.6.1/bin/linux/amd64/kubectl"]
+    },
+    {
+     "args": ["chmod", "+x", "kubectl"]
+    },
+    {
+      "args": ["./kubectl", "config", "view"],
+      "link": "config_view"
+    },
+    {
+      "args": ["./kubectl", "cluster", "info"],
+      "link": "cluster_info"
+    },
+    {
+      "args": ["./kubectl", "cluster", "info", "dump", "--all-namespaces"],
+      "link": "cluster_info_dump"
+    },
+    {
+      "args": ["./kubectl", "get", "all", "--all-namespaces"],
+      "link": "get_all"
+    },
+    {
+      "args": ["./kubectl", "get", "all", "--all-namespaces", "-o", "wide"],
+      "link": "get_all_wide"
+    },
+    {
+      "args": ["./kubectl", "describe", "all", "--all-namespaces", "--show-events"],
+      "link": "describe_all"
+    },
+    {
+      "args": ["./kubectl", "get", "nodes"],
+      "link": "get_nodes"
+    },
+    {
+      "args": ["./kubectl", "get", "certificatesigningrequests", "--all-namespaces", "-o", "wide"],
+      "link": "get_certificatesigningrequests"
+    },
+    {
+      "args": ["./kubectl", "get", "clusterrolebindings", "--all-namespaces", "-o", "wide"],
+      "link": "get_clusterrolebindings"
+    },
+    {
+      "args": ["./kubectl", "get", "clusterroles", "--all-namespaces", "-o", "wide"],
+      "link": "get_clusterroles"
+    },
+    {
+     "args": ["./kubectl", "get", "componentstatuses", "--all-namespaces", "-o", "wide"],
+      "link": "get_componentstatuses"
+    },
+    {
+      "args": ["./kubectl", "get", "configmaps", "--all-namespaces", "-o", "wide"],
+      "link": "get_configmaps"
+    },
+    {
+      "args": ["./kubectl", "get", "daemonsets", "--all-namespaces", "-o", "wide"],
+      "link": "get_daemonsets"
+    },
+    {
+      "args": ["./kubectl", "get", "deployments", "-a", "--all-namespaces", "-o", "wide"],
+      "link": "get_endpoints"
+    },
+    {
+      "args": ["./kubectl", "get", "endpoints", "--all-namespaces", "-o", "wide"],
+      "link": "get_endpoints"
+    },
+    {
+      "args": ["./kubectl", "get", "events", "--all-namespaces", "-o", "wide"],
+      "link": "get_events"
+    },
+    {
+      "args": ["./kubectl", "get", "horizontalpodautoscalers", "--all-namespaces", "-o", "wide"],
+      "link": "get_horizontalpodautoscalers"
+    },
+    {
+      "args": ["./kubectl", "get", "ingresses", "--all-namespaces", "-o", "wide"],
+      "link": "get_ingresses"
+    },
+    {
+      "args": ["./kubectl", "get", "jobs", "--all-namespaces", "-o", "wide"],
+      "link": "get_jobs"
+    },
+    {
+      "args": ["./kubectl", "get", "limitranges", "--all-namespaces", "-o", "wide"],
+      "link": "get_limitranges"
+    },
+    {
+      "args": ["./kubectl", "get", "namespaces", "--all-namespaces", "-o", "wide"],
+      "link": "get_namespaces"
+    },  
+    {
+      "args": ["./kubectl", "get", "networkpolicies", "--all-namespaces", "-o", "wide"],
+      "link": "get_networkpolicies"
+    },
+    {
+      "args": ["./kubectl", "get", "nodes", "-o", "wide"],
+      "link": "get_nodes"
+    },
+    {
+      "args": ["./kubectl", "get", "persistentvolumeclaims", "--all-namespaces", "-o", "wide"],
+      "link": "get_persistentvolumeclaims"
+    },  
+    {
+      "args": ["./kubectl", "get", "persistentvolumes", "--all-namespaces", "-o", "wide"],
+      "link": "get_persistentvolumes"
+    },
+    {
+      "args": ["./kubectl", "get", "pods", "-a", "--all-namespaces", "-o", "wide"],
+      "link": "get_pods"
+    },
+    {
+      "args": ["./kubectl", "get", "poddisruptionbudgets", "--all-namespaces", "-o", "wide"],
+      "link": "get_poddisruptionbudgets"
+    },
+    {
+      "args": ["./kubectl", "get", "podsecuritypolicies", "--all-namespaces", "-o", "wide"],
+      "link": "get_podsecuritypolicies"
+    },
+    {
+      "args": ["./kubectl", "get", "podtemplates", "--all-namespaces", "-o", "wide"],
+      "link": "get_podtemplates"
+    },  
+     {
+      "args": ["./kubectl", "get", "replicasets", "--all-namespaces", "-o", "wide"],
+      "link": "get_replicasets"
+    },
+    {
+      "args": ["./kubectl", "get", "replicationcontrollers", "--all-namespaces", "-o", "wide"],
+      "link": "get_replicationcontrollers"
+    },
+    {
+      "args": ["./kubectl", "get", "resourcequotas", "--all-namespaces", "-o", "wide"],
+      "link": "get_resourcequotas"
+    },
+    {
+      "args": ["./kubectl", "get", "rolebindings", "--all-namespaces", "-o", "wide"],
+      "link": "get_rolebindings"
+    },
+    {
+      "args": ["./kubectl", "get", "roles", "--all-namespaces", "-o", "wide"],
+      "link": "get_roles"
+    },  
+    {
+      "args": ["./kubectl", "get", "secrets", "--all-namespaces", "-o", "wide"],
+      "link": "get_secrets"
+    },
+    {
+      "args": ["./kubectl", "get", "serviceaccounts", "--all-namespaces", "-o", "wide"],
+      "link": "get_serviceaccounts"
+    },
+    {
+      "args": ["./kubectl", "get", "services", "-a", "--all-namespaces", "-o", "wide"],
+      "link": "get_services"
+    },
+    {
+      "args": ["./kubectl", "get", "statefulsets", "--all-namespaces", "-o", "wide"],
+      "link": "get_statefulsets"
+    },
+    {
+      "args": ["./kubectl", "get", "storageclasses", "--all-namespaces", "-o", "wide"],
+      "link": "get_storageclasses"
+    },
+    {
+      "args": ["./kubectl", "get", "thirdpartyresources", "--all-namespaces", "-o", "wide"],
+      "link": "get_thirdpartyresources"
+    },
+    {
+      "args": ["sudo", "journalctl", "-r", "-u", "kubelet"],
+      "link": "kubelet_logs"
+    },
+    {
+      "args": ["rm", "kubectl"]
+    }
+  ]
+}
