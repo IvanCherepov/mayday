@@ -1,6 +1,6 @@
-
-mmands": [
-    {
+{
+  "commands": [
+    { 
      "args": ["curl", "-LO", "https://storage.googleapis.com/kubernetes-release/release/v1.6.1/bin/linux/amd64/kubectl"]
     },
     {
@@ -167,8 +167,28 @@ mmands": [
       "link": "get_thirdpartyresources"
     },
     {
+      "args": ["docker", "ps", "-a"],
+      "link": "docker_ps_a"
+    },
+    {
+      "args": ["echo", "$(for", "i", "in", "{echo", "$(docker", "ps", "-aq)};", "do", "docker", "logs", "$i;", "done)"],
+      "link": "docker_logs"
+    },
+    {
+      "args": ["rkt", "list"],
+      "link": "rkt_list"
+    },
+    {
+      "args": ["./kubectl", "config", "view"],
+      "link": "config_view"
+    },
+     {
       "args": ["sudo", "journalctl", "-r", "-u", "kubelet"],
       "link": "kubelet_logs"
+    },
+    {
+      "args": ["sudo", "systemctl", "status", "-l", "kubelet"],
+      "link": "kubelet_status"
     },
     {
       "args": ["rm", "kubectl"]
