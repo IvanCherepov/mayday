@@ -64,7 +64,7 @@
     },
     {
       "args": ["./kubectl", "get", "deployments", "-a", "--all-namespaces", "-o", "wide"],
-      "link": "get_endpoints"
+      "link": "get_deployments"
     },
     {
       "args": ["./kubectl", "get", "endpoints", "--all-namespaces", "-o", "wide"],
