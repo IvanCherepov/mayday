@@ -147,10 +147,6 @@
       "link": "get_roles"
     },  
     {
-      "args": ["./kubectl", "get", "secrets", "--all-namespaces", "-o", "wide"],
-      "link": "get_secrets"
-    },
-    {
       "args": ["./kubectl", "get", "serviceaccounts", "--all-namespaces", "-o", "wide"],
       "link": "get_serviceaccounts"
     },
