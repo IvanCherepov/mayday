@@ -59,6 +59,10 @@
       "link": "get_configmaps"
     },
     {
+      "args": ["./kubectl", "get", "customresourcedefinitions", "--all-namespaces", "-o", "wide"],
+      "link": "get_customresourcedefinitions"
+    },
+    {
       "args": ["./kubectl", "get", "daemonsets", "--all-namespaces", "-o", "wide"],
       "link": "get_daemonsets"
     },
@@ -109,6 +113,10 @@
     {
       "args": ["./kubectl", "get", "persistentvolumes", "--all-namespaces", "-o", "wide"],
       "link": "get_persistentvolumes"
+    },
+    {
+      "args": ["./kubectl", "get", "podpresets", "--all-namespaces", "-o", "wide"],
+      "link": "get_podpresets"
     },
     {
       "args": ["./kubectl", "get", "pods", "-a", "--all-namespaces", "-o", "wide"],
